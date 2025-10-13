@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TRAC Akademi, Türkiye Amatörleri kişisel öğrenme ve gelişim platformudur! TRAC Akademi ile kendinizi geliştirmek için sayfamızı ziyeret edin!">
+    <title>TRAC Akademi - Anasayfa</title>
+    <link rel="stylesheet" href="http://localhost/tracakademi/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="http://localhost/tracakademi/favicon-new.png">
+</head>
+<body class="loading" data-url="http://localhost/tracakademi">
+
+    <header class="main-header">
+    <div class="header-top">
+        <div class="container">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Akademi Hakkında</a></li>
+                    <li><a href="#">Tüm Eğitimler</a></li>
+                    <li><a href="#">S.S.S</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook" style="color: #1456c8;"></i></i></a>
+                <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.instagram.com/tracakademi" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@TRACAKADEMI" target="_blank" aria-label="Youtube"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="http://localhost/tracakademi/img/trac-akademi-logo.png" alt="TRAC Akademi Logo"></a>
+                <div class="search-bar">
+                <form action="#">
+                    <input type="text" placeholder="Eğitimlerde arama yapın...">
+                    <button type="submit" aria-label="Ara"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="login-area">
+                <button id="login-button" class="btn">Giriş Yap</button>
+                <div id="login-dropdown" class="dropdown-content">
+                    <a href="#">Kayıt Ol</a>
+                    <a href="#">Google ile Giriş</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero-slider"> <div class="slider-track">
+        <a href="#" class="slide">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&h=800&fit=crop" alt="Slider Resim 1">
+        </a>
+        <a href="#" class="slide">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1600&h=800&fit=crop" alt="Slider Resim 2">
+        </a>
+        <a href="#" class="slide">
+            <img src="http://localhost/tracakademi/img/Slider/akademi-telsiz-egitimi.png" alt="Slider Resim 3">
+        </a>
+        <a href="#" class="slide">
+            <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=1600&h=800&fit=crop" alt="Slider Resim 4">
+        </a>
+        <a href="#" class="slide">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=800&fit=crop" alt="Slider Resim 5">
+        </a>
+    </div>
+
+    <button class="slider-btn slider-prev" aria-label="Önceki slayt"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-btn slider-next" aria-label="Sonraki slayt"><i class="fas fa-chevron-right"></i></button>
+
+    <div class="slider-pagination"></div>
+</section>
+    <!-- <script src="script.js"></script> -->
+    <main class="course-content">
+    <div class="container">
+        <section class="course-carousel">
+            <div class="section-header">
+                <h2 class="section-title">Önerilen Eğitimler</h2>
+                <a href="#" class="view-all-link">Tümü</a>
+            </div>
+            
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Önceki slayt"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Modern Web Geliştirme</h3>
+                                <p>HTML, CSS ve JavaScript ile sıfırdan profesyonel web siteleri oluşturun.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Python ile Veri Bilimi</h3>
+                                <p>Veri analizi ve makine öğrenmesi temellerini Python ile keşfedin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>React.js ile Arayüz</h3>
+                                <p>Popüler JavaScript kütüphanesi React ile dinamik arayüzler geliştirin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Proje Yönetimi Esasları</h3>
+                                <p>Agile ve Scrum metodolojileri ile projelerinizi başarıya ulaştırın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Temel C# Programlama</h3>
+                                <p>C# dilinin temellerini öğrenerek yazılım dünyasına adım atın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>UI/UX Tasarım İlkeleri</h3>
+                                <p>Kullanıcı odaklı, etkileyici ve modern tasarımlar yapmayı öğrenin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                         <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1504639725590-94d058dece3v?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Siber Güvenlik Farkındalığı</h3>
+                                <p>Dijital dünyada kişisel ve kurumsal verilerinizi korumanın yolları.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Oyun Geliştirme Temelleri</h3>
+                                <p>Oyun motorları ve programlama dilleriyle kendi oyununuzu yapın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Sonraki slayt"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="course-carousel">
+            <div class="section-header">
+                <h2 class="section-title">Son Eklenen Eğitimler</h2>
+                <a href="#" class="view-all-link">Tümü</a>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Önceki slayt"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Modern Web Geliştirme</h3>
+                                <p>HTML, CSS ve JavaScript ile sıfırdan profesyonel web siteleri oluşturun.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Python ile Veri Bilimi</h3>
+                                <p>Veri analizi ve makine öğrenmesi temellerini Python ile keşfedin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>React.js ile Arayüz</h3>
+                                <p>Popüler JavaScript kütüphanesi React ile dinamik arayüzler geliştirin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Proje Yönetimi Esasları</h3>
+                                <p>Agile ve Scrum metodolojileri ile projelerinizi başarıya ulaştırın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Temel C# Programlama</h3>
+                                <p>C# dilinin temellerini öğrenerek yazılım dünyasına adım atın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>UI/UX Tasarım İlkeleri</h3>
+                                <p>Kullanıcı odaklı, etkileyici ve modern tasarımlar yapmayı öğrenin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                         <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1504639725590-94d058dece3v?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Siber Güvenlik Farkındalığı</h3>
+                                <p>Dijital dünyada kişisel ve kurumsal verilerinizi korumanın yolları.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Oyun Geliştirme Temelleri</h3>
+                                <p>Oyun motorları ve programlama dilleriyle kendi oyununuzu yapın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Sonraki slayt"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="course-carousel">
+            <div class="section-header">
+                <h2 class="section-title">En Çok İzlenen Eğitimler</h2>
+                <a href="#" class="view-all-link">Tümü</a>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" aria-label="Önceki slayt"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Modern Web Geliştirme</h3>
+                                <p>HTML, CSS ve JavaScript ile sıfırdan profesyonel web siteleri oluşturun.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Python ile Veri Bilimi</h3>
+                                <p>Veri analizi ve makine öğrenmesi temellerini Python ile keşfedin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>React.js ile Arayüz</h3>
+                                <p>Popüler JavaScript kütüphanesi React ile dinamik arayüzler geliştirin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Proje Yönetimi Esasları</h3>
+                                <p>Agile ve Scrum metodolojileri ile projelerinizi başarıya ulaştırın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Temel C# Programlama</h3>
+                                <p>C# dilinin temellerini öğrenerek yazılım dünyasına adım atın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>UI/UX Tasarım İlkeleri</h3>
+                                <p>Kullanıcı odaklı, etkileyici ve modern tasarımlar yapmayı öğrenin.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                         <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1504639725590-94d058dece3v?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Siber Güvenlik Farkındalığı</h3>
+                                <p>Dijital dünyada kişisel ve kurumsal verilerinizi korumanın yolları.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?w=500" alt="Eğitim Resmi">
+                            <div class="card-content">
+                                <h3>Oyun Geliştirme Temelleri</h3>
+                                <p>Oyun motorları ve programlama dilleriyle kendi oyununuzu yapın.</p>
+                                <a href="#" class="card-link">Detayları Gör</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Sonraki slayt"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <section class="why-us">
+    <div class="container">
+        <h2 class="section-title text-center">Amatör Telsizciliğe Giriş</h2>
+        <p class="section-description text-center">TRAC Akademi ile amatör telsizcilik dünyasına ilk adımı atın. Merak ettiğiniz her şey, başlangıç için temel rehberimizle parmaklarınızın ucunda.</p>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-broadcast-tower feature-icon"></i>
+                <h3>Amatör Telsizcilik Nedir?</h3>
+                <p>Bu heyecan verici hobinin ne olduğunu, amacını ve temel prensiplerini keşfedin. İletişimin sınırlarını zorlayın.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-id-card feature-icon"></i>
+                <h3>Nasıl Amatör Telsizci Olunur?</h3>
+                <p>Lisans belgesi almak için gereken adımları, başvuru süreçlerini ve yasal gereklilikleri öğrenin.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-pencil-alt feature-icon"></i>
+                <h3>Sınava Nasıl Hazırlanılır?</h3>
+                <p>Akademimizdeki kaynaklar, deneme sınavları ve çalışma stratejileri ile lisans sınavına en iyi şekilde hazırlanın.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-list-alt feature-icon"></i>
+                <h3>Etik Kurallar ve Prosedürler</h3>
+                <p>Telsiz başında uymanız gereken ulusal ve uluslararası etik kuralları ve doğru haberleşme prosedürlerini öğrenin.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    </main>
+    <!-- <script src="http://localhost/tracakademi/js/script.js"></script> -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-col about">
+            <h3>Kısaca Biz</h3>
+            <p>Geleceğinize yatırım yapın! En yeni teknolojiler ve yetenekler için buradayız. Vizyonumuz, her öğrencimizin potansiyelini keşfetmesini sağlamaktır.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!--<div class="footer-col links">
+            <h3>Hızlı Bağlantılar</h3>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="programlar.html">Programlar</a></li>
+                <li><a href="egitmenler.html">Eğitmenler</a></li>
+                <li><a href="sss.html">S.S.S.</a></li>
+            </ul>
+        </div> -->
+
+        <div class="footer-col programs">
+            <h3>kurumsal</h3>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Tüm Eğitimler</a></li>
+                <li><a href="#">S.S.S.</a></li>
+            </ul>
+        </div>
+
+        <!-- <div class="footer-col contact">
+            <h3>Bize Ulaşın</h3>
+            <p>
+                <i class="fas fa-map-marker-alt"></i> Adres: Örnek Cad. No: 123, Şehir, Ülke
+            </p>
+            <p>
+                <i class="fas fa-phone"></i> Telefon: +90 555 123 45 67
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i> E-posta: info@akademiadi.com
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 TRAC Akademi. Tüm hakları saklıdır. (TRAC Akademi Türkiye Radyo Amatörleri Cemiyeti Eğitim Platformudur)</p>
+        <p class="powered-by">Powered by <a href="#" target="_blank">NSL Yazılım</a></p>
+    </div>
+</footer>
+<footer>
+    <div class="footer-container">
+        <div class="footer-col about">
+            <h3>Kısaca Biz</h3>
+            <p>TRAC Akademi, Türkiye Radyo Amatörleri Cemiyeti'nin eğitim platformu olarak, amatör telsizcilik dünyasına adım atmak isteyen herkese rehberlik eder.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col links">
+            <h3>Kurumsal</h3>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Tüm Eğitimler</a></li>
+                <li><a href="#">S.S.S.</a></li>
+            </ul>
+        </div> -->
+
+        <div class="footer-col contact">
+            <h3>Bize Ulaşın</h3>
+            <ul class="contact-list">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <span>Adres: Örnek Cad. No: 123, Şehir, Ülke</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <span>+90 555 123 45 67</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>info@tracakademi.org</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="footer-year">2025</span> TRAC Akademi. Tüm hakları saklıdır. (TRAC Akademi Türkiye Radyo Amatörleri Cemiyeti Eğitim Platformudur)</p>
+        <p class="powered-by">Powered by <a href="https://ardaunsal.dev" target="_blank">NSL Yazılım</a></p>
+    </div>
+</footer>
+<button 
+    onclick="scrollToTop()" 
+    id="scrollToTopBtn" 
+    class="btn btn-dark" 
+    title="Sayfa Başına Dön"
+    style="display:none; position: fixed; bottom: 20px; right: 30px; z-index: 99; border-radius: 50%; padding: 10px 15px;">
+    ↑
+</button>
+<script src="http://localhost/tracakademi/js/script.js"></script>  
+</body>
+</html>

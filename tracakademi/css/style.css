@@ -1,0 +1,643 @@
+/* Genel Sayfa Ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header ve Navigasyon */
+/* Genel Header Ayarları */
+.main-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-header .container {
+    max-width: none; /* Header'ın tam genişlikte olmasını sağlar */
+    display: flex;
+    align-items: center;
+}
+
+/* Üst Bilgi Satırı (Top Bar) */
+.header-top {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.header-top .container {
+    justify-content: flex-end; /* İçeriği sağa yasla */
+}
+
+.header-top .main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header-top .main-nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+.header-top .main-nav a:hover {
+    color: #0056b3;
+}
+
+.social-icons {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #555;
+    margin: 0 8px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
+
+/* Ana Bilgi Satırı (Main Bar) */
+.header-main {
+    padding: 20px 0;
+}
+
+.header-main .container {
+    justify-content: space-between;
+}
+
+.header-main .logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+/* Arama Kutusu */
+.search-bar {
+    flex-grow: 1; /* Mevcut boşluğu doldur */
+    margin: 0 40px; /* Logo ve buton ile arasına boşluk koy */
+}
+
+.search-bar form {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #007BFF;
+}
+
+/* Giriş Alanı */
+.login-area {
+    position: relative;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #007BFF;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+
+.hero-slider { /* Yeni ana kapsayıcı sınıfı */
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative; /* Buton ve pagination için */
+}
+
+.hero-slider .slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.hero-slider .slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.hero-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin en boy oranını koruyarak alanı doldur, taşanı kes */
+    display: block;
+}
+
+/* Yeni Slider Butonları Stili */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Koyu yarı saydam */
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 24px;
+    opacity: 0.7; /* Silik başlangıç */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.slider-btn:hover:not(:disabled) {
+    opacity: 1; /* Üzerine gelince belirginleşir */
+    background-color: rgba(0, 0, 0, 0.8); /* Daha koyu arka plan */
+}
+
+.slider-btn.slider-prev {
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.slider-btn.slider-next {
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.3; /* Pasifken daha silik */
+}
+
+/* Slider Pagination (Nokta Göstergeleri) */
+.slider-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    gap: 10px;
+}
+
+.slider-pagination-dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slider-pagination-dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+.slider-pagination-dot.active {
+    background-color: #007BFF; /* Aktif noktayı ana renk yapalım */
+    transform: scale(1.2);
+    border: 1px solid white;
+}
+
+/* === EĞİTİM KARUSELLERİ BÖLÜMÜ BAŞLANGIÇ === */
+
+/* Ana sayfa içeriği için genel container ayarları */
+.course-content .container {
+    display: block; /* Flex özelliğini burada sıfırlıyoruz */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.course-carousel {
+    margin-bottom: 50px; /* Her bir karusel arasına boşluk */
+}
+
+.section-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-viewport {
+    overflow: hidden; /* En önemli kısım, taşan kartları gizler */
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px; /* Kartlar arası boşluk */
+    transition: transform 0.5s ease-in-out; /* Yumuşak kayma efekti */
+}
+
+.course-card {
+    /* Ekranda 4 kart görünmesi için genişlik ayarı */
+    /* calc(100% / 4) -> %25, -15px -> boşluk payı */
+    flex: 0 0 calc(25% - 15px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px); /* Kartın üzerine gelince hafif yukarı kalkma efekti */
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    /* Yazı 2 satırdan uzunsa kesip sonuna ... koyar */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-link:hover {
+    color: #007BFF;
+}
+
+/* Yön Tuşları */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    opacity: 0.6;
+    transition: opacity 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel-btn:not(:disabled):hover {
+    opacity: 1;
+    background-color: #B3B3B3FF;
+}
+
+.carousel-btn.prev {
+    left: -20px;
+}
+
+.carousel-btn.next {
+    right: -20px;
+}
+
+/* Buton disabled (pasif) durumdayken */
+.carousel-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+/* === EĞİTİM KARUSELLERİ BÖLÜMÜ BİTİŞ === */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin-bottom: 0;
+}
+
+.view-all-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+    color: #007BFF;
+}
+
+/* === AMATÖR TELSİZCİLİĞE GİRİŞ BÖLÜMÜ BAŞLANGIÇ === */
+
+.why-us {
+    padding: 80px 0; /* Üstten ve alttan boşluk */
+    /*background-color: #f1f7fe; /* Hafif arka plan rengi */
+    text-align: center;
+}
+
+.why-us .container {
+    max-width: 1000px; /* Bu bölümün içeriğini biraz daraltıyoruz */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: block; /* Flex özelliğini burada sıfırlıyoruz */
+}
+
+.section-title.text-center {
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: #2c3e50;
+    border-bottom: none; /* Alt çizgiyi burada kaldırıyoruz */
+    padding-bottom: 0;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 50px auto; /* Ortala ve alttan boşluk */
+    line-height: 1.6;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap; /* Kartlar alt satıra geçebilsin */
+    gap: 30px; /* Kartlar arası boşluk */
+    justify-content: center; /* Kartları ortala */
+}
+
+.feature-item {
+    flex: 0 0 calc(25% - 22.5px); /* Her satırda 4 kart (gap hesaplaması) */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px); /* Üzerine gelince yukarı kalkma efekti */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Gölgeyi belirginleştir */
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* === AMATÖR TELSİZCİLİĞE GİRİŞ BÖLÜMÜ BİTİŞ === */
+
+footer { 
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; /* Boşluğu biraz artırmak daha iyi bir görünüm sağlayabilir */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px; /* İçeriğe göre minimum genişliği ayarlamak daha esnek olabilir */
+    margin-bottom: 20px;
+}
+
+.footer-col h3 {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #4a627a; /* Başlıklara hafif bir alt çizgi */
+    padding-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px; /* Boşluğu biraz artırdık */
+}
+
+.footer-col ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #3498db;
+    padding-left: 5px; /* Hover efektine küçük bir kaydırma animasyonu */
+}
+
+/* DÜZELTME: Yeni eklenen contact-list için stiller */
+.contact-list li {
+    display: flex;
+    align-items: flex-start; /* İkon ve yazıyı üstten hizala */
+}
+
+.contact-list i {
+    margin-right: 10px;
+    color: #3498db;
+    margin-top: 4px; /* İkonu yazıya göre dikeyde ortalamak için */
+    width: 20px; /* İkonların hizalı durması için sabit genişlik */
+}
+
+/* Sosyal Medya (Social Links) */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ecf0f1;
+    margin-right: 15px;
+    font-size: 1.5em; /* Biraz daha büyük ikonlar */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* Telif Hakkı (Footer Bottom) */
+.footer-bottom {
+    background-color: #1e3040;
+    text-align: center;
+    padding: 20px; /* Boşluğu artırdık */
+    font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap; /* Küçük ekranlar için */
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    /* DÜZELTME: min-width kaldırıldı. max-width eklendi. */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-bottom p { /* Ortak p stili */
+    margin: 0;
+}
+
+.footer-bottom .powered-by a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-bottom .powered-by a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Düzenleme */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* DÜZELTME: footer-bottom için de responsive ayar eklendi */
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-col {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .contact-list li {
+        justify-content: center; /* Mobil görünümde iletişim bilgilerini ortala */
+    }
+}
+
+
+
