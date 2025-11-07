@@ -643,7 +643,7 @@ footer {
 
 /* Koyu Arka Plan Rengi (Bootstrap'in bg-dark'ından biraz daha yumuşak olabilir) */
 .bg-dark-custom {
-    background-color: #59606e !important; /* Koyu gri tonu */
+    background-color: #d2d6deff !important; /* Koyu gri tonu */
 }
 
 /* Kartın arka planını beyaz yapalım ki öne çıksın */
@@ -655,5 +655,6 @@ footer {
 .input-group-text {
     color: #0d6efd; /* Bootstrap primary rengi */
 }
+
 
 
